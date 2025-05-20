@@ -54,8 +54,11 @@ class _ContactListScreenState extends State<ContactListScreen> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: Text("Confirmation"),
-        content: Text("Are you sure for Delete?"),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
+        ),
+        title: Text("Confirmation",style: TextStyle(fontWeight: FontWeight.w600),),
+        content: Text("Are you sure for Delete?",style: TextStyle(fontSize: 20),),
         actions: [
           IconButton(
             icon: Icon(Icons.cancel),
